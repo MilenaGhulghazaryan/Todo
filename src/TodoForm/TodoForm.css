@@ -3,16 +3,22 @@
     margin-left: 40px;
     width: 1000px;
     border: 2px solid rgba(243, 243, 20, 0.815);
-    height: 20px;
+    height: 40px;
+    font-size: large;
+    border-radius: 3px;
   
 }
 .add{
     margin-left: 10px;
-    background-color:rgba(0, 111, 139, 0.473); /* Green */
+    background-color:rgba(6, 59, 90, 0.274); /* Green */
     border: none;
-    width: 50px;
-    height: 25px;
+    width: 70px;
+    height: 45px;
     border-radius: 2px;
     color:aliceblue;
+    font-size: large;
     
+}
+body{
+    font-size: medium;
 }

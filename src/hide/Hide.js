@@ -4,12 +4,11 @@ function Hide({todos, onClearCompleted}){
   
    return (
        <>
-        
-       <div>
-          <span className="task">Task</span>
+        <span className="task">Task</span>
+      
+          <input style={{color:"red"}}   className='box' type="checkbox" onClick={onClearCompleted}/>
           <span className='hh'>Hide completed</span>
-          <input className='box' type="checkbox" onClick={onClearCompleted}/>
-       </div>
+       
        </>
    )
 }

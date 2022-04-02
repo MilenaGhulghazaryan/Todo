@@ -5,15 +5,16 @@
 }
 .check{
     margin-left: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-top: 1px solid rgb(201, 194, 194);
     margin-right: 200px;
-   
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .svg{
     width: 200px;
     margin-left: 900px;
-    color: rgba(0, 255, 255, 0.397);
+    color: rgba(4, 17, 17, 0.596);
 }
 
 .hide {
@@ -23,3 +24,4 @@
   .hide1{
     display: block;
   }
+  
