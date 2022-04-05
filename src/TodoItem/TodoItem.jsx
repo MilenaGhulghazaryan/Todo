@@ -1,7 +1,8 @@
 import './TodoItem.css';
 import {AiOutlineClose} from "react-icons/ai";
-function TodoItem({todo, onChange, onDelete}){
-   
+import Modal from '../modal';
+import { useState } from 'react';
+function TodoItem({todo, onChange, openModal}){
   
    return(
        <>
@@ -15,11 +16,9 @@ function TodoItem({todo, onChange, onDelete}){
                       isCompleted: e.target.checked
                   })
                }} />
-                {todo.text}
-               <i className = "svg" onClick={()=>{
-                   onDelete(todo);
-               }}><AiOutlineClose/></i>
            </label>
+           {todo.text}
+               <i className = "svg"  id="modal" onClick={openModal}><AiOutlineClose/></i>
        </div>
        </>
    )

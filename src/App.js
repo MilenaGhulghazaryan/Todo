@@ -34,8 +34,9 @@ function App() {
       }}/>
       <TodoList 
       todos={todos}
-      onDelete ={(todo)=>{
-         setTodos(todos.filter((t)=> t.id !== todo.id));
+      onDelete ={(id)=>{
+        console.info(id)
+         setTodos(todos.filter((t)=> t.id !== id));
       }}
       onChange={(newTodo)=>{
         setTodos(todos.map((todo)=>{

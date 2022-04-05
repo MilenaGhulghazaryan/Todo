@@ -1,6 +1,33 @@
 .mm{
     box-sizing: border-box;
-    width: 50px;
-    height: 50px;
-    background-color: aliceblue;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(198, 202, 206);
+    color: rgba(7, 91, 148, 0.904);
+    margin-left: 500px;
+    top: 70px;
+    z-index: -5;
+    text-align: center;
+    
+}
+.yes{
+    background-color: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 8px;
+    cursor: pointer;
+}
+.no{
+    background-color: none;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 8px;
+    cursor: pointer;
 }
