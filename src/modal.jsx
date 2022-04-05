@@ -8,10 +8,12 @@ function Modal({closeModal, onDelete, objId}){
     return(
       <>
       <div className="mm">
+      
         <p>Are you sure you want to delete?</p>
-        <button className='yes' onClick={onConfirm}>Yes</button>
+        <button className='yes' onClick={onConfirm} >Yes</button>
 
         <button className='no' onClick={closeModal}>No</button>
+        
       </div>
       </>
     )

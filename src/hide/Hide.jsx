@@ -1,5 +1,6 @@
 import './hide.css';
-function Hide({ todos, onClearCompleted, setHideIsComplited, hideIsComplited }) {
+
+function Hide({ setHideIsComplited, hideIsComplited }) {
 
 
 
@@ -13,8 +14,8 @@ function Hide({ todos, onClearCompleted, setHideIsComplited, hideIsComplited }) 
                 console.log("usus", hideIsComplited)
             }} />
 
-            <span className='hh'>Hide completed</span>
-
+            <span className='hideComp'>Hide completed</span>
+          
         </>
     )
 }
