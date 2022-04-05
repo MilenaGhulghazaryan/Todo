@@ -4,6 +4,7 @@ import  './TodoForm.css';
 function TodoForm({onAdd}){
 
    const [text,setText] = useState("");
+
    
    return(
        <form onSubmit={(e) =>{
@@ -12,7 +13,7 @@ function TodoForm({onAdd}){
            setText("");
        }}>
            
-           <input placeholder="Write here" className = "input" type = "text" value={text} onChange={(e) => {
+           <input placeholder="Write here" className = "input" type = "text" value={text} maxlength="5" onChange={(e) => {
               setText(e.target.value);
            }}/>
            <button className="add">Add</button>

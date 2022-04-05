@@ -5,8 +5,10 @@ import TodoForm from './TodoForm/TodoForm';
 import Hide from './hide/Hide';
 
 function App() {
+ const[hideIsComplited,setHideIsComplited]=useState(false)
  
   const [todos, setTodos] = useState([
+    
     {
       id:Math.random(),
       text:"Learn Js",
@@ -18,6 +20,7 @@ function App() {
       isCompleted:false
     }
   ]);
+
   return (
     <>
     
@@ -33,9 +36,10 @@ function App() {
          ])
       }}/>
       <TodoList 
-      todos={todos}
+      todos={todos} hideIsComplited={hideIsComplited}
       onDelete ={(id)=>{
-        console.info(id)
+        console.log(id);
+      
          setTodos(todos.filter((t)=> t.id !== id));
       }}
       onChange={(newTodo)=>{
@@ -47,9 +51,8 @@ function App() {
         }));
       }}
       />
-      <Hide todos={todos} onClearCompleted={()=>{
-        setTodos(todos.filter((todo) => !todo.isCompleted));
-      }}/>
+      
+      <Hide hideIsComplited={hideIsComplited} setHideIsComplited={setHideIsComplited}/>
     </div>
     </>
   );
