@@ -24,7 +24,7 @@ function App() {
   return (
     <>
     <div className="App">
-
+    
     <Hide hideIsComplited={hideIsComplited} setHideIsComplited={setHideIsComplited}/>
     
       <TodoForm onAdd={(text)=>{
@@ -57,7 +57,7 @@ function App() {
       }}
       />
       
-     
+   
     </div>
     </>
   );

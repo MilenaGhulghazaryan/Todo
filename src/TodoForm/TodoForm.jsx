@@ -36,7 +36,6 @@ function TodoForm({ onAdd }) {
     let handleChange = (value) => {
         setText(value);
         if (value.length > 54) {
-            console.info('mtav')
             setErrorMessage(true)
         } else {
             setErrorMessage(false)
@@ -53,16 +52,18 @@ function TodoForm({ onAdd }) {
                 onAdd(text);
                 setText("");
             }}>
-                <label>
-                    Task
+                <div className="ajj">
+                <div className="taskinpadd">
+                    <label>Task</label>
                     <input placeholder="Write here" className="input" type="text" value={text} onChange={(e) => {
                         handleChange(e.target.value);
                     }} />
-                </label>
-
-
-
+                </div>
                 <button className="add">Add</button>
+                </div>
+
+
+               
 
             </form>
             <div>

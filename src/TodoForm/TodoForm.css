@@ -1,7 +1,6 @@
 .input{
-    margin-top: 120px;
-    margin-left: 40px;
-    width: 1000px;
+    
+    
     border: 2px solid rgba(243, 243, 20, 0.815);
     height: 40px;
     font-size: large;
@@ -12,7 +11,7 @@
     margin-left: 10px;
     background-color:rgba(6, 59, 90, 0.274); /* Green */
     border: none;
-    width: 70px;
+    padding: 20px 20px;
     height: 45px;
     border-radius: 2px;
     color:aliceblue;
@@ -22,4 +21,13 @@
 body{
     font-size: medium;
 }
-
+.taskinpadd{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+.ajj{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; 
+}

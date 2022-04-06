@@ -9,16 +9,16 @@ function TodoItem({todo, onChange, openModal}){
        
        <div className='check'>
            
-           <label className='action'> 
+           <div className='action'> 
                <input  className='checkbox' type="checkbox" checked ={todo.isCompleted} onChange={(e)=>{
                   onChange({
                       ...todo,
                       isCompleted: e.target.checked
                   })
                }} />
-           </label>
-           {todo.text}
-               <i className = "svg"  id="modal" onClick={openModal}><AiOutlineClose/></i>
+                <span style={todo.isCompleted ? {color:'gray'} : {color: 'black'}}>{todo.text}</span>
+           </div>
+               <div className = "svg"  id="modal" onClick={openModal}><AiOutlineClose/></div>
        </div>
        </>
    )

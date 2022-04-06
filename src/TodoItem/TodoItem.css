@@ -4,16 +4,16 @@
     
 }
 .check{
-    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     border-top: 1px solid rgb(201, 194, 194);
-    margin-right: 200px;
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .svg{
-    width: 200px;
-    margin-left: 900px;
     color: rgba(4, 17, 17, 0.596);
 }
 

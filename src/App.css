@@ -1,7 +1,7 @@
-body{
+.App{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style:normal;
     color:rgb(99, 91, 91);
-    margin-top: 20px;
-    
+    /*margin-top: 20px;*/
+    padding: 170px 100px 0 100px;
 }
