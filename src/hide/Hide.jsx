@@ -6,17 +6,12 @@ function Hide({ setHideIsComplited, hideIsComplited }) {
 
 
     return (
-        <>
-            <span className="task">Task</span>
-
-            <input style={{ color: "red" }} className='box' type="checkbox" checked={hideIsComplited} onChange={() => {
+        <div>
+          <label className='checkBox'><input type="checkbox" checked={hideIsComplited} onChange={() => {
                 setHideIsComplited(!hideIsComplited)
-                console.log("usus", hideIsComplited)
-            }} />
-
-            <span className='hideComp'>Hide completed</span>
-          
-        </>
+            }}/>Hide completed</label>
+    
+        </div>
     )
 }
 

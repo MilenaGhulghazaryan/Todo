@@ -24,18 +24,24 @@ function App() {
   return (
     <>
     <div className="App">
+
+    <Hide hideIsComplited={hideIsComplited} setHideIsComplited={setHideIsComplited}/>
+    
       <TodoForm onAdd={(text)=>{
          setTodos([
-           ...todos,
+            
            {
              id:Math.random(),
              text:text,
              isCompleted:false
-           }
+             
+           },
+           ...todos
          ])
       }}/>
       <TodoList 
-      todos={todos} hideIsComplited={hideIsComplited}
+      todos={todos} 
+      hideIsComplited={hideIsComplited}
       onDelete ={(id)=>{
         console.log(id);
       
@@ -51,7 +57,7 @@ function App() {
       }}
       />
       
-      <Hide hideIsComplited={hideIsComplited} setHideIsComplited={setHideIsComplited}/>
+     
     </div>
     </>
   );
