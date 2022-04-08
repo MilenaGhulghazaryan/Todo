@@ -1,7 +1,9 @@
-.App{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style:normal;
-    color:rgb(99, 91, 91);
-    /*margin-top: 20px;*/
-    padding: 170px 100px 0 100px;
+.App {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    color: rgb(99, 91, 91);
+    padding: 140px 100px 0 100px;
+}
+.h2{
+    text-align: center;
 }

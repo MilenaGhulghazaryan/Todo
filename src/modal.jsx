@@ -6,7 +6,8 @@ function Modal({ closeModal, onDelete, objId }) {
 
   }
   return (
-    <>
+    <div className='modal'>
+
       <div className="mm">
 
         <p>Are you sure you want to delete?</p>
@@ -15,9 +16,10 @@ function Modal({ closeModal, onDelete, objId }) {
         <button className='no' onClick={closeModal}>No</button>
 
       </div>
-    </>
+    </div>
   )
 }
 export default Modal;
+
 
 

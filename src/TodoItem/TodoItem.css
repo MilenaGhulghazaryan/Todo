@@ -1,21 +1,18 @@
-.checkbox{
-    margin-right: 20px;
-    
-    
+.checkbox {
+    margin-right: 20px;    
 }
-.check{
+
+.check {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    border-top: 1px solid rgb(201, 194, 194);
+    margin-top: 25px;
+    border-bottom: 1px solid rgb(235, 225, 225);
     font-size: large;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.svg{
+
+.svg {
     color: rgba(4, 17, 17, 0.596);
 }
-
-
-  

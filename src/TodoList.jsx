@@ -1,25 +1,24 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import Modal from "./modal";
 import TodoItem from "./TodoItem/TodoItem";
 
-function TodoList({ todos, onDelete, onChange, submit, hideIsComplited }) {
+function TodoList({ todos, onDelete, onChange, hideIsComplited }) {
     let [showModal, setShowModal] = useState(false)
     let [openedId, setOpenedId] = useState()
-    
+
     let handleModal = (id) => {
         setShowModal(!showModal)
         setOpenedId(id)
     }
-    let hh 
+    let hh
     if (hideIsComplited) {
         hh = todos.filter(todo => {
             return !todo.isCompleted
-           
         })
-    }else{
-       hh = todos
+    } else {
+        hh = todos
     }
-    console.log(hideIsComplited)
+
     return (
         <div>
             {
@@ -30,16 +29,18 @@ function TodoList({ todos, onDelete, onChange, submit, hideIsComplited }) {
                             todo={todo}
                             onChange={onChange}
                             openModal={() => handleModal(todo.id)}
-           
+
                         />
                     )
                 })
             }
             {showModal && <Modal onDelete={onDelete} closeModal={() => handleModal()} objId={openedId} />}
-        
+
         </div>
     )
+
 }
 
 export default TodoList;
+
 
